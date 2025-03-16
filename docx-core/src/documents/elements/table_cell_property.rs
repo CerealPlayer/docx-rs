@@ -12,8 +12,8 @@ use crate::xml_builder::*;
 #[derive(Serialize, Debug, Clone, PartialEq, Default)]
 #[serde(rename_all = "camelCase")]
 pub struct TableCellProperty {
-    width: Option<TableCellWidth>,
-    borders: Option<TableCellBorders>,
+    pub width: Option<TableCellWidth>,
+    pub borders: Option<TableCellBorders>,
     grid_span: Option<GridSpan>,
     vertical_merge: Option<VMerge>,
     vertical_align: Option<VAlign>,

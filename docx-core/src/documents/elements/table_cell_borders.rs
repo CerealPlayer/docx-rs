@@ -94,10 +94,10 @@ impl BuildXML for TableCellBorder {
 #[cfg_attr(feature = "wasm", ts(export))]
 #[serde(rename_all = "camelCase")]
 pub struct TableCellBorders {
-    top: Option<TableCellBorder>,
-    left: Option<TableCellBorder>,
-    bottom: Option<TableCellBorder>,
-    right: Option<TableCellBorder>,
+    pub top: Option<TableCellBorder>,
+    pub left: Option<TableCellBorder>,
+    pub bottom: Option<TableCellBorder>,
+    pub right: Option<TableCellBorder>,
     inside_h: Option<TableCellBorder>,
     inside_v: Option<TableCellBorder>,
     tr2bl: Option<TableCellBorder>,
